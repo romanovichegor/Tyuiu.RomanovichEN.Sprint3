@@ -9,7 +9,7 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task0.V12.Lib
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                sums = sums + (Math.Pow(value, i) + 1 / (i + 1));
+                sums = sums * (Math.Pow(value, i) + 1 / (i + 1));
             }
             return sums;
         }
