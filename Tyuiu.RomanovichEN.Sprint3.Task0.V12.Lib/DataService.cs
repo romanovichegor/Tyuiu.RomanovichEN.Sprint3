@@ -3,17 +3,17 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task0.V12.Lib
 {
     public class DataService : ISprint3Task0V12
     {
-        public double GetMultiplySeries(int value, int startValue, int stopValue)
+        public double GetMultiplySeries(int t, int startValue, int stopValue)
         {
-            double sums = 1.5;
-            int i;
-            for (i = startValue+1; i <= stopValue; i++)
-            {
-                double term  = (Math.Pow(value, i) + 1 / (i + 1));
-                sums *= term;
+            double product = 1.0;
 
+            for (int k = startValue; k <= stopValue; k++)
+            {
+                double term = Math.Pow(t, k) + 1.0 / (k + 1);
+                product *= term;
             }
-            return sums;
+
+            return product;
         }
     }
 }
