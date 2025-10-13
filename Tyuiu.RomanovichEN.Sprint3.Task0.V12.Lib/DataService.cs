@@ -5,11 +5,11 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task0.V12.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sums = 0;
+            double sums = 1;
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                sums = sums * (Math.Pow(value, i) + 1 / (i + 1));
+                sums *= (Math.Pow(value, i) + 1 / (i + 1));
             }
             return sums;
         }
