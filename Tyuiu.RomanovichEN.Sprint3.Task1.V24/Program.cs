@@ -1,4 +1,4 @@
-﻿using Tyuiu.RomanovichEN.Sprint3.Task0.V12.Lib;
+﻿using Tyuiu.RomanovichEN.Sprint3.Task1.V24.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -7,15 +7,15 @@ internal class Program
         Console.Title = " Спринт #3 | Выполнил: Романович Е. Н. | ПКТб-25-1";
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #3                                                               *");
-        Console.WriteLine("* Тема: Оператор цикла for                                                *");
-        Console.WriteLine("* Задание #0                                                              *");
-        Console.WriteLine("* Вариант #12                                                             *");
+        Console.WriteLine("* Тема: Оператор цикла while                                              *");
+        Console.WriteLine("* Задание #1                                                              *");
+        Console.WriteLine("* Вариант #24                                                             *");
         Console.WriteLine("* Выполнил: Романович Егор Николаевич | ПКТб-25-1                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-        Console.WriteLine("Введите t:");
+        Console.WriteLine("Введите x:");
         int value = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Введите начальное значение:");
         int startValue = Convert.ToInt32(Console.ReadLine());
@@ -25,6 +25,6 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine(ds.GetMultiplySeries(value, startValue, stopValue));
+        Console.WriteLine(ds.GetSumSeries(value, startValue, stopValue));
     }
 }
