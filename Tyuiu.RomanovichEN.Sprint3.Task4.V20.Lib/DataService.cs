@@ -5,15 +5,21 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task4.V20.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double res = 1;
-            for (startValue=-5; startValue<=stopValue; startValue++)
+            double res = 1.0;
+            double y, cosx, den;
+            for (; startValue<=stopValue; startValue+=1)
             {
                 if (startValue == 0)
                 {
                     continue;
                 }
-                res *= (startValue/(Math.Cos(startValue)-startValue))+ 2.5;
-                startValue++;
+                cosx = Math.Cos(startValue);
+                den = cosx - startValue;
+                if (den != 0)
+                {
+                    y = (startValue / den) + 2.5;
+                    res *= y;
+                }
             }
             return Math.Round(res,3);
         }
