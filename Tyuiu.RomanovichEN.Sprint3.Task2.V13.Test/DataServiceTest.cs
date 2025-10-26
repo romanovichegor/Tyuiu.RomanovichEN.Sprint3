@@ -8,7 +8,7 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task2.V13.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double wait = 2.087;
+            double wait = 4.063;
             double res = ds.GetSumSeries(0.7, 1, 10);
             Assert.AreEqual(wait, res);
         }
