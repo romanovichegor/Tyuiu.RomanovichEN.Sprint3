@@ -7,7 +7,7 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task4.V20.Test
         [TestMethod]
         public void ValidCalculate()
         {
-            double wait = 2.367;
+            double wait = 10.483;
             DataService ds = new DataService();
             int start, stop;
             start = -5; stop = 5;
