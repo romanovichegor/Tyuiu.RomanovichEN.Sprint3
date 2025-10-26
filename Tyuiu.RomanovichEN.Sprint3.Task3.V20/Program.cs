@@ -18,4 +18,4 @@ Console.WriteLine("*                                                            
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine(ds.GetCharCount(value,chr));
+Console.WriteLine(ds.GetCharCount(value, chr));
