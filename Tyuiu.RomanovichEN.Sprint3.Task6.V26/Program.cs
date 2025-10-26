@@ -23,6 +23,6 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine(ds.GetSumTheDivisors(start,stop));
+        Console.WriteLine(ds.GetSumTheDivisors(start, stop));
     }
 }
