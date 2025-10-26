@@ -6,13 +6,13 @@ namespace Tyuiu.RomanovichEN.Sprint3.Task6.V26.Lib
         public int GetSumTheDivisors(int startValue, int stopValue)
         {
             int count1 = 0;
-            for (int i = startValue; i < stopValue; i++)
+            for (int i = startValue; i <= stopValue; i++)
             {
-                for (int j = 1; j <= startValue; j++)
+                for (int j = 1; j <= i; j++)
                 {
                     if (i % j == 0)
                     {
-                        count1 += 1;
+                        count1 ++;
                     }
                 }
             }
